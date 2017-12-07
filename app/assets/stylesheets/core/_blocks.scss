@@ -1,0 +1,35 @@
+// Blocks
+//===========================================
+
+.canvas {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  border: 1px solid red;
+}
+
+.color-bar .swatch {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 3px;
+  border: 1px solid $color-black;
+  margin: $space-xl auto;
+  cursor: pointer;
+}
+
+.swatch--red {
+  background: $color-red;
+}
+.swatch--purple {
+  background: $color-purple;
+}
+.swatch--yellow {
+  background: $color-yellow;
+}
+
+// Detail page concerns
+
+.proofs {
+  float: left;
+  border: 1px solid red;
+}

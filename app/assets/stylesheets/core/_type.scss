@@ -1,5 +1,49 @@
 // Type
+//===========================================
+
+// Scale
+
+$modular-scale-ratio: $major-third;
+$modular-scale-base: 1rem;
+
+// Import
+@font-face {
+    font-family: 'Sharp Sans Medium';
+    src: url('sharpsans-medium-webfont.eot');
+    src: url('sharpsans-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sharpsans-medium-webfont.woff2') format('woff2'),
+         url('sharpsans-medium-webfont.woff') format('woff'),
+         url('sharpsans-medium-webfont.ttf') format('truetype'),
+         url('sharpsans-medium-webfont.svg#sharp_sans_mediumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sharp Sans Bold';
+    src: url('sharpsans-bold-webfont.eot');
+    src: url('sharpsans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sharpsans-bold-webfont.woff2') format('woff2'),
+         url('sharpsans-bold-webfont.woff') format('woff'),
+         url('sharpsans-bold-webfont.ttf') format('truetype'),
+         url('sharpsans-bold-webfont.svg#sharp_sansbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
 
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Sharp Sans Medium', Helvetica, Arial, sans-serif;
+  color: $color-black;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Sharp Sans Bold', Helvetica, Arial, sans-serif;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid $color-gray-light-med;
+  margin: $space-xl*4 0;
 }

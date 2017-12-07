@@ -1,0 +1,44 @@
+.titleBlock {
+  line-height: 1;
+  border: 1px solid red;
+  float: left;
+  width: 100%;
+}
+
+.titleBlock--title {
+  color: $color-black;
+}
+.titleBlock--usertitle {
+  color: $color-red;
+}
+
+.titleBlock--actions {}
+
+.titleBlock--actions--action {}
+
+.titleBlock .actions {
+  margin: 0;
+  padding: 0;
+}
+
+.titleBlock .actions--date,
+.titleBlock .actions--retrieve,
+.titleBlock .actions--print {
+  margin-right: $space-s;
+  display: inline-block;
+  list-style: none;
+  font-size: modular-scale(-1);
+  text-align: center;
+  padding: $space-s $space-l;
+}
+
+.titleBlock .actions--date {
+  padding-left: 0;
+}
+
+.titleBlock .actions--retrieve,
+.titleBlock .actions--print {
+  border-radius: 40px;
+  background: $color-gray-light-med;
+  text-transform: capitalize;
+}

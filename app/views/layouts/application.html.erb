@@ -9,6 +9,10 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render "components/header" %>
+    <div class="canvas">
+      <%= yield %>
+    </div>
+    Footer
   </body>
 </html>

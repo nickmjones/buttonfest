@@ -1,0 +1,75 @@
+// Header
+
+.menuBar {
+  display: flex;
+  padding: $space-xl;
+  border-top: 1rem*1.5 solid $color-red;
+  border-bottom: 1px solid $color-gray-light-med;
+}
+.menuBar--logo {
+  flex: auto;
+}
+.menuBar--ttarp {
+  padding: 0 $space-l;
+  margin-top: $space-xl*1.5;
+}
+.menuBar--ttarp__icon {
+  float: left;
+  color: $color-red;
+  font-size: 2rem;
+  margin-top: -$space-s;
+}
+.menuBar--ttarp__title {
+  text-transform: uppercase;
+  letter-spacing: 0.07rem;
+  color: $color-black;
+  font-size: modular-scale(-2);
+}
+.menuBar--ttarp__action {
+  font-size: modular-scale(0);
+}
+
+// Link list
+
+.linkList {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  border-bottom: 2px solid $color-gray-light-med;
+}
+.linkList--item {
+  flex: auto;
+  list-style: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: $space-m 0;
+  transition: all 0.20s ease-in-out;
+  cursor: pointer;
+}
+.linkList--item:hover {
+  background: $color-red;
+  color: #fff;
+}
+
+// breadCrumb
+
+.breadCrumb {
+  background: $color-gray-light;
+}
+
+.pathList {
+  display: flex;
+  background: $color-gray-light;
+  margin: auto;
+  padding: $space-l $space-xl*2 $space-l 0;
+  max-width: 1280px;
+}
+.pathList--item {
+  list-style: none;
+  margin-right: $space-m;
+  font-size: modular-scale(-1);
+  border-radius: 80px;
+  background: darken($color-gray-light, 10%);
+  padding: $space-s $space-l;
+}
