@@ -4,8 +4,6 @@
 .canvas {
   max-width: 1280px;
   margin: auto;
-  display: flex;
-  border: 1px solid red;
 }
 
 .color-bar .swatch {
@@ -28,8 +26,49 @@
 }
 
 // Detail page concerns
+// mostly cards
 
-.proofs {
-  float: left;
-  border: 1px solid red;
+.cardSet {
+  display: flex;
+}
+.cardSet--card {
+  flex: auto;
+  padding: $space-xl;
+}
+.cardSet--card .order-now {
+  text-align: center;
+  margin: $space-xl 0;
+  font-size: modular-scale(-1);
+}
+.cardSet--card p {
+  font-size: modular-scale(-1);
+  line-height: 1.67;
+}
+.cardSet--card ul {
+  list-style: none;
+  margin: 0 0 $space-xl;
+  padding: 0;
+  border-top: 1px solid $color-gray-light-med;
+}
+.cardSet--card ul li {
+  font-size: modular-scale(-1);
+  padding: $space-l $space-m;
+  border-bottom: 1px solid $color-gray-light-med;
+}
+.cardSet--card ul li a {
+  display: block;
+  text-decoration: none;
+}
+.cardSet--card ul li .icon {
+  float: right;
+  font-size: modular-scale(2);
+  line-height: 1.45;
+  color: $color-black;
+}
+.cardSet--card__proof {
+  padding-left: 0;
+}
+.cardSet--card__proof img {
+  width: 400px;
+  border-radius: 8px;
 }

@@ -1,6 +1,35 @@
 <%= render "components/titleBlock" %>
 
-<div class="proofs">
-  <div class="proof"><%=image_tag "watermarked_big.jpg" %></div>
-  <div class="proof"><%=image_tag "watermarked_big-1.jpg" %></div>
+<div class="cardSet">
+  <div class="cardSet--card cardSet--card__proof">
+    <%=image_tag "watermarked_big.jpg" %>
+  </div>
+  <div class="cardSet--card cardSet--card__proof">
+    <%=image_tag "watermarked_big-1.jpg" %>
+  </div>
+  <div class="cardSet--card">
+    <div class="btn-e btn-e--primary">Order Now</div>
+    <div class="order-now">
+      Order today for FREE delivery by December 26, 2017
+    </div>
+
+    <ul>
+      <li>
+        <span class="icon"><%=fa_icon "group" %></span>
+        <%=link_to raw("Set Up a Group Order Form &rarr;"), "#" %>
+        Collect sizes and/or payments online.
+      </li>
+      <li>
+        <span class="icon"><%=fa_icon "money" %></span>
+        <%=link_to raw("Start a Fundraiser &rarr;"), "#" %>
+        Raise money by selling this design online.
+      </li>
+    </ul>
+
+    <div class="actions">
+      <div class="btn btn--secondary">Edit Design</div>
+      <div class="btn btn--secondary">Get Price</div>
+    </div>
+
+  </div>
 </div>

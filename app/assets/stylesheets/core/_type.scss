@@ -36,6 +36,9 @@ body {
   padding: 0;
   margin: 0;
 }
+body * {
+  box-sizing: border-box;
+}
 
 h1, h2, h3, h4, h5 {
   font-family: 'Sharp Sans Bold', Helvetica, Arial, sans-serif;
@@ -45,5 +48,10 @@ hr {
   border: 0;
   height: 0;
   border-top: 1px solid $color-gray-light-med;
-  margin: $space-xl*4 0;
+  margin: $space-xl 0;
+}
+
+a {
+  color: $color-btn-primary;
+  font-family: 'Sharp Sans Bold', Helvetica, Arial, sans-serif;
 }

@@ -1,17 +1,20 @@
 .titleBlock {
   line-height: 1;
-  border: 1px solid red;
-  float: left;
+  width: 100%;
+  margin: $space-xl 0;
+}
+.titleBlock h1 {
+  margin: 0;
+  line-height: 2;
 }
 
-.titleBlock--title {
+.titleBlock--product {
   color: $color-black;
 }
+
 .titleBlock--usertitle {
   color: $color-red;
 }
-
-.titleBlock--actions {}
 
 .titleBlock--actions--action {}
 
@@ -26,7 +29,7 @@
   margin-right: $space-s;
   display: inline-block;
   list-style: none;
-  font-size: modular-scale(-1);
+  font-size: modular-scale(0);
   text-align: center;
   padding: $space-s $space-l;
 }

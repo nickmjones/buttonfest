@@ -120,6 +120,7 @@ $btn-radius: 4px;
   display: inline-block;
   color: lighten($color-btn-primary, 40%);
   text-align: center;
+  width: 100%;
   box-shadow:
     //0 -2px 0 darken($color-btn-primary, 20%) inset
     0 3px 6px darken($color-gray-light, 25%);
@@ -132,5 +133,29 @@ $btn-radius: 4px;
 .btn-e--primary:active {
   background: darken($color-btn-primary, 10%);
   //box-shadow: 0 -4px 4px darken($color-btn-primary, 15%) inset;
+  box-shadow: none;
+}
+
+
+.btn {
+  padding: $space-l $space-xl*2 $space-l+2;
+  transition: all 0.20s ease-in-out;
+  cursor: pointer;
+}
+.btn--secondary {
+  @extend .btn-e;
+  display: inline-block;
+  background: $color-gray;
+  text-align: center;
+  color: #fff;
+  width: 49%;
+  box-shadow: 0 3px 6px darken($color-gray-light, 25%);
+}
+.btn--secondary:hover {
+  background: darken($color-gray, 5%);
+  box-shadow: 0 6px 12px darken($color-gray-light, 25%);
+}
+.btn--secondary:active {
+  background: darken($color-gray, 10%);
   box-shadow: none;
 }
