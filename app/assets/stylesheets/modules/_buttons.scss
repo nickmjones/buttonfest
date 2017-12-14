@@ -136,26 +136,53 @@ $btn-radius: 4px;
   box-shadow: none;
 }
 
+// Plain vanilla buttons below
 
 .btn {
   padding: $space-l $space-xl*2 $space-l+2;
-  transition: all 0.20s ease-in-out;
+  transition: all 0.10s ease-in-out;
   cursor: pointer;
+  border-radius: 6px;
+  font-size: modular-scale(-1);
 }
+.btn--xl {
+  font-size: modular-scale(0);
+}
+
+.btn--primary {
+  background: $color-success;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+.btn--primary:hover {
+  background: darken($color-success, 5%);
+}
+.btn--primary:active {
+  background: darken($color-success, 10%);
+}
+
 .btn--secondary {
   @extend .btn-e;
   display: inline-block;
-  background: $color-gray;
   text-align: center;
-  color: #fff;
-  width: 49%;
-  box-shadow: 0 3px 6px darken($color-gray-light, 25%);
+  color: $color-black;
+  border: 2px solid $color-gray-med;
+}
+.btn--secondary__inline {
+  width: 55%;
+  display: inline !important;
+  margin-right: $space-l;
+}
+.btn--secondary__inline:last-child {
+  margin-right: 0;
 }
 .btn--secondary:hover {
-  background: darken($color-gray, 5%);
-  box-shadow: 0 6px 12px darken($color-gray-light, 25%);
+  background: darken($color-gray-light-med, 3%);
 }
 .btn--secondary:active {
-  background: darken($color-gray, 10%);
+  background: darken($color-gray-light-med, 5%);
   box-shadow: none;
 }

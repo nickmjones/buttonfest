@@ -1,8 +1,9 @@
 // Blocks
 //===========================================
 
-.canvas {
-  max-width: 1280px;
+.canvas,
+.content {
+  max-width: 1240px;
   margin: auto;
 }
 
@@ -40,6 +41,10 @@
   margin: $space-xl 0;
   font-size: modular-scale(-1);
 }
+.cardSet--card .actions {
+  margin-bottom: $space-m;
+  display: flex;
+}
 .cardSet--card p {
   font-size: modular-scale(-1);
   line-height: 1.67;
@@ -48,12 +53,13 @@
   list-style: none;
   margin: 0 0 $space-xl;
   padding: 0;
-  border-top: 1px solid $color-gray-light-med;
 }
 .cardSet--card ul li {
   font-size: modular-scale(-1);
-  padding: $space-l $space-m;
-  border-bottom: 1px solid $color-gray-light-med;
+  padding: $space-l;
+  border: 1px solid $color-gray-light-med;
+  border-radius: 6px;
+  margin-bottom: $space-m;
 }
 .cardSet--card ul li a {
   display: block;

@@ -1,7 +1,7 @@
 .titleBlock {
   line-height: 1;
   width: 100%;
-  margin: $space-xl 0;
+  margin: $space-xl*3 0;
 }
 .titleBlock h1 {
   margin: 0;
@@ -13,7 +13,7 @@
 }
 
 .titleBlock--usertitle {
-  color: $color-red;
+  color: $color-black;
 }
 
 .titleBlock--actions--action {}
@@ -29,9 +29,9 @@
   margin-right: $space-s;
   display: inline-block;
   list-style: none;
-  font-size: modular-scale(0);
+  font-size: modular-scale(-1);
   text-align: center;
-  padding: $space-s $space-l;
+  padding: $space-m $space-l;
 }
 
 .titleBlock .actions--date {
