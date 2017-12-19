@@ -120,7 +120,6 @@ $btn-radius: 4px;
   display: inline-block;
   color: lighten($color-btn-primary, 40%);
   text-align: center;
-  width: 100%;
   box-shadow:
     //0 -2px 0 darken($color-btn-primary, 20%) inset
     0 3px 6px darken($color-gray-light, 25%);
@@ -139,10 +138,10 @@ $btn-radius: 4px;
 // Plain vanilla buttons below
 
 .btn {
-  padding: $space-l $space-xl*2 $space-l+2;
-  transition: all 0.10s ease-in-out;
+  padding: $space-m $space-xl*1;
+  transition: all 0.20s ease-in-out;
   cursor: pointer;
-  border-radius: 6px;
+  border-radius: 4px;
   font-size: modular-scale(-1);
 }
 .btn--xl {
@@ -150,27 +149,33 @@ $btn-radius: 4px;
 }
 
 .btn--primary {
-  background: $color-success;
+  background: $color-btn-primary;
   display: inline-block;
   color: #fff;
   text-align: center;
   width: 100%;
+  box-shadow: 0 2px 3px $color-gray-light-med;
+  font-family: 'Sharp Sans Bold', Helvetica, Arial, sans-serif;
 }
 
 .btn--primary:hover {
-  background: darken($color-success, 5%);
+  background: darken($color-btn-primary, 10%);
+  box-shadow: 0 4px 8px $color-gray-light-med;
 }
 .btn--primary:active {
-  background: darken($color-success, 10%);
+  background: darken($color-btn-primary, 20%);
+  box-shadow: none;
 }
 
 .btn--secondary {
-  @extend .btn-e;
+  @extend .btn;
   display: inline-block;
   text-align: center;
-  color: $color-black;
-  border: 2px solid $color-gray-med;
+  color: $color-btn-primary;
+  border: 1px solid $color-btn-primary;
+  //font-family: 'Sharp Sans Bold', Helvetica, Arial, sans-serif;
 }
+
 .btn--secondary__inline {
   width: 55%;
   display: inline !important;
@@ -180,9 +185,21 @@ $btn-radius: 4px;
   margin-right: 0;
 }
 .btn--secondary:hover {
-  background: darken($color-gray-light-med, 3%);
+  background: transparentize($color-btn-primary, 0.9);
 }
 .btn--secondary:active {
-  background: darken($color-gray-light-med, 5%);
+  background: transparentize($color-btn-primary, 0.6);
   box-shadow: none;
+}
+
+.pill {
+  background: $color-gray-light-med;
+  border-radius: 40px;
+  color: $color-black;
+  text-align: center;
+  padding: 4px 8px;
+  margin-left: $space-s;
+}
+.pill__small {
+  font-size: modular-scale(-2);
 }

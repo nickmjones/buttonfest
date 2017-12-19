@@ -1,37 +1,48 @@
-<%= render "components/titleBlock" %>
-
 <div class="cardSet">
+
   <div class="cardSet--card cardSet--card__proof">
     <%=image_tag "watermarked_big.jpg" %>
   </div>
+
   <div class="cardSet--card cardSet--card__proof">
     <%=image_tag "watermarked_big-1.jpg" %>
   </div>
+
   <div class="cardSet--card">
-    <h4>Purchase &amp; Edit</h4>
+
+    <div class="icon icon__positioned">
+      <%=fa_icon "print" %>
+    </div>
+
+    <h5>Design Name</h5>
+    <h1>Foo Bar Bat</h1>
+
+    <table class="product_info">
+      <tr>
+        <td class="label">Last Saved:</td>
+        <td>December 22, 2017</td>
+      </tr>
+      <tr>
+        <td class="label">Product:</td>
+        <td>Gildan Ultra Cotton <span class="pill pill__small">Edit</span></td>
+      </tr>
+    </table>
+
     <div class="btn btn--xl btn--primary">Order Now</div>
     <div class="order-now">
       Order today for FREE delivery by December 26, 2017
     </div>
     <div class="actions">
-      <div class="btn btn--secondary btn--secondary__inline">
-        <%=fa_icon "flask" %> Edit Design</div>
-      <div class="btn btn--secondary btn--secondary__inline">
-        <%=fa_icon "usd" %> Get Price</div>
+      <div class="btn btn--secondary btn--secondary__inline">Edit Design</div>
+      <div class="btn btn--secondary btn--secondary__inline">Get Price</div>
     </div>
 
-    <h4>Other Options</h4>
-    <ul>
-      <li>
-        <span class="icon"><%=fa_icon "group" %></span>
-        <%=link_to raw("Set Up a Group Order Form &rarr;"), "#" %>
-        Collect sizes and/or payments online.
-      </li>
-      <li>
-        <span class="icon"><%=fa_icon "money" %></span>
-        <%=link_to raw("Start a Fundraiser &rarr;"), "#" %>
-        Raise money by selling this design online.
-      </li>
+    <ul class="social">
+      <li class="social--email"><%=fa_icon "envelope" %></li>
+      <li class="social--email"><%=fa_icon "twitter" %></li>
+      <li class="social--email"><%=fa_icon "pinterest" %></li>
+      <li class="social--email"><%=fa_icon "facebook" %></li>
+      <li class="social--email"><%=fa_icon "google" %></li>
     </ul>
 
   </div>

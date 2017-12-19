@@ -41,6 +41,14 @@
 .titleBlock .actions--retrieve,
 .titleBlock .actions--print {
   border-radius: 40px;
-  background: $color-gray-light-med;
-  text-transform: capitalize;
+  color: #444;
+  transition: all 0.10s ease-in-out;
+  background: #efefef;
+  border: 1px solid transparent;
+  cursor: pointer;
+  padding: $space-s $space-xl;
+
+  &:hover {
+    border: 1px solid #777;
+  }
 }

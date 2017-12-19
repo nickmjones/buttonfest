@@ -33,9 +33,9 @@
 
 .linkList {
   display: flex;
-  justify-content: space-around;
-  padding: 0;
+  justify-content: center;
   margin: 0;
+  border-bottom: 1px solid $color-gray-light-med;
 }
 .linkList--item {
   flex: auto;
