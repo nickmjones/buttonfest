@@ -193,12 +193,12 @@ $btn-radius: 4px;
 }
 
 .pill {
-  background: $color-gray-light-med;
-  border-radius: 40px;
-  color: $color-black;
+  color: $color-btn-primary;
   text-align: center;
-  padding: 4px 8px;
+  border-radius: 3px;
+  padding: 3px 6px;
   margin-left: $space-s;
+  border: 1px solid $color-btn-primary;
 }
 .pill__small {
   font-size: modular-scale(-2);

@@ -40,10 +40,28 @@ body * {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Sharp Sans Bold', Helvetica, Arial, sans-serif;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Sharp Sans Medium', Helvetica, Arial, sans-serif;
   margin: 0;
-  line-height: 3;
+}
+
+h1 {
+  font-size: modular-scale(5);
+}
+h2 {
+  font-size: modular-scale(4);
+}
+h3 {
+  font-size: modular-scale(3);
+}
+h4 {
+  font-size: modular-scale(2);
+}
+h5 {
+  font-size: modular-scale(1);
+}
+h6 {
+  font-size: modular-scale(0);
 }
 
 hr {

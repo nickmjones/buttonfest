@@ -1,3 +1,8 @@
 footer {
+  background: #4a525a;
   font-size: modular-scale(-1);
+  margin-top: $space-xl*2;
+  height: 25vh;
+  color: lighten(#4a525a, 40%);
+  padding: $space-xl*2;
 }
