@@ -22,7 +22,7 @@ $btn-radius: 4px;
 
 .btn--primary:hover {
   background: darken($color-btn-primary, 8%);
-  box-shadow: 0 3px 15px darken($color-gray-light, 25%);
+  box-shadow: 0 4px 8px darken($color-gray-light, 25%);
 }
 .btn--primary:active {
   background: darken($color-btn-primary, 15%);
