@@ -5,201 +5,26 @@
 $btn-radius: 4px;
 
 // A
-.btn-a {
-  padding: $space-l $space-xl*2 $space-l+2;
-  transition: all 0.60s ease-in-out;
-  cursor: pointer;
-}
-
-.btn-a--primary {
-  background: $color-btn-primary;
-  display: inline-block;
-  color: lighten($color-btn-primary, 50%);
-  text-align: center;
-  border-radius: $btn-radius;
-  box-shadow:
-    //0 -2px 0 darken($color-btn-primary, 20%) inset
-    0 3px 6px darken($color-gray-light, 25%);
-}
-
-.btn-a--primary:hover {
-  background: darken($color-btn-primary, 5%);
-}
-.btn-a--primary:active {
-  background: darken($color-btn-primary, 10%);
-  //box-shadow: 0 -4px 4px darken($color-btn-primary, 15%) inset;
-  box-shadow: none;
-}
-
-
-// B
-.btn-b {
-  padding: $space-l $space-xl*2 $space-l+2;
-  transition: all 0.10s ease-in-out;
-  cursor: pointer;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-.btn-b--primary {
-  background: $color-btn-primary;
-  display: inline-block;
-  color: lighten($color-btn-primary, 50%);
-  text-align: center;
-  border-radius: $btn-radius;
-  box-shadow:
-    0 -2px 0 darken($color-btn-primary, 15%) inset,
-    0 3px 4px darken($color-gray-light, 25%);
-}
-
-.btn-b--primary:hover {
-  background: darken($color-btn-primary, 5%);
-}
-.btn-b--primary:active {
-  background: darken($color-btn-primary, 10%);
-  box-shadow: 0 2px 0 darken($color-btn-primary, 20%) inset;
-}
-
-// C
-.btn-c {
-  padding: $space-l $space-xl*2 $space-l+2;
-  transition: all 0.10s ease-in-out;
-  cursor: pointer;
-}
-
-.btn-c--primary {
-  background: $color-btn-primary;
-  display: inline-block;
-  color: lighten($color-btn-primary, 50%);
-  text-align: center;
-  border-radius: $btn-radius*10;
-  box-shadow:
-    0 3px 4px darken($color-gray-light, 25%);
-}
-
-.btn-c--primary:hover {
-  background: darken($color-btn-primary, 5%);
-}
-.btn-c--primary:active {
-  background: darken($color-btn-primary, 10%);
-  box-shadow: 0 2px 0 darken($color-btn-primary, 15%) inset;
-}
-
-// D
-.btn-d {
-  padding: $space-l $space-xl*2 $space-l+2;
-  transition: all 0.10s ease-in-out;
-  cursor: pointer;
-}
-
-.btn-d--primary {
-  background: $color-btn-primary;
-  display: inline-block;
-  color: lighten($color-btn-primary, 50%);
-  text-align: center;
-  border-radius: $btn-radius;
-}
-
-.btn-d--primary:hover {
-  background: darken($color-btn-primary, 5%);
-}
-.btn-d--primary:active {
-  background: darken($color-btn-primary, 10%);
-  box-shadow: 0 2px 0 darken($color-btn-primary, 30%) inset;
-}
-
-// E
-.btn-e {
-  padding: $space-l $space-xl*2 $space-l+2;
-  transition: all 0.10s ease-in-out;
-  cursor: pointer;
-}
-
-.btn-e--primary {
-  background: $color-btn-primary;
-  display: inline-block;
-  color: lighten($color-btn-primary, 40%);
-  text-align: center;
-  box-shadow:
-    //0 -2px 0 darken($color-btn-primary, 20%) inset
-    0 3px 6px darken($color-gray-light, 25%);
-}
-
-.btn-e--primary:hover {
-  background: darken($color-btn-primary, 5%);
-  box-shadow: 0 6px 12px darken($color-gray-light, 25%);
-}
-.btn-e--primary:active {
-  background: darken($color-btn-primary, 10%);
-  //box-shadow: 0 -4px 4px darken($color-btn-primary, 15%) inset;
-  box-shadow: none;
-}
-
-// Plain vanilla buttons below
-
 .btn {
-  padding: $space-m $space-xl*1;
-  transition: all 0.20s ease-in-out;
+  padding: $space-l $space-xl*2 $space-l+2;
+  transition: all 0.15s ease-in-out;
   cursor: pointer;
-  border-radius: 4px;
-  font-size: modular-scale(-1);
-}
-.btn--xl {
-  font-size: modular-scale(0);
 }
 
 .btn--primary {
   background: $color-btn-primary;
   display: inline-block;
-  color: #fff;
+  color: lighten($color-btn-primary, 50%);
   text-align: center;
-  width: 100%;
-  box-shadow: 0 2px 3px $color-gray-light-med;
-  font-family: 'Sharp Sans Bold', Helvetica, Arial, sans-serif;
+  border-radius: $btn-radius;
+  box-shadow: 0 2px 6px darken($color-gray-light, 25%);
 }
 
 .btn--primary:hover {
-  background: darken($color-btn-primary, 10%);
-  box-shadow: 0 4px 8px $color-gray-light-med;
+  background: darken($color-btn-primary, 8%);
+  box-shadow: 0 3px 15px darken($color-gray-light, 25%);
 }
 .btn--primary:active {
-  background: darken($color-btn-primary, 20%);
+  background: darken($color-btn-primary, 15%);
   box-shadow: none;
-}
-
-.btn--secondary {
-  @extend .btn;
-  display: inline-block;
-  text-align: center;
-  color: $color-btn-primary;
-  border: 1px solid $color-btn-primary;
-  //font-family: 'Sharp Sans Bold', Helvetica, Arial, sans-serif;
-}
-
-.btn--secondary__inline {
-  width: 55%;
-  display: inline !important;
-  margin-right: $space-l;
-}
-.btn--secondary__inline:last-child {
-  margin-right: 0;
-}
-.btn--secondary:hover {
-  background: transparentize($color-btn-primary, 0.9);
-}
-.btn--secondary:active {
-  background: transparentize($color-btn-primary, 0.6);
-  box-shadow: none;
-}
-
-.pill {
-  color: $color-btn-primary;
-  text-align: center;
-  border-radius: 3px;
-  padding: 3px 6px;
-  margin-left: $space-s;
-  border: 1px solid $color-btn-primary;
-}
-.pill__small {
-  font-size: modular-scale(-2);
 }
